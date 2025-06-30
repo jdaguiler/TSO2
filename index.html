@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plataforma de Virtualización - Proyecto Final</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Proyecto Final - Taller de Sistemas Operativos II</h1>
+    <p>Implementación de una Plataforma de Virtualización Integrada</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#proxmox">Proxmox VE 8</a></li>
+      <li><a href="#redes">Segmentación de Red</a></li>
+      <li><a href="#contenedores">Contenedores LXC</a></li>
+      <li><a href="#vms">Máquinas Virtuales</a></li>
+      <li><a href="#integracion">Integración de Servicios</a></li>
+      <li><a href="#documentacion">Documentación</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="proxmox">
+      <h2>Instalación y Configuración de Proxmox VE 8</h2>
+      <p>Se instaló y configuró el hipervisor Proxmox VE 8 en el servidor físico, asegurando su operatividad completa.</p>
+    </section>
+
+    <section id="redes">
+      <h2>Segmentación de Red y Zonas</h2>
+      <p>Infraestructura segmentada en tres zonas: DMZ, LAN y WAN. Cada zona está aislada y configurada correctamente.</p>
+    </section>
+
+    <section id="contenedores">
+      <h2>Contenedores LXC en la DMZ</h2>
+      <ul>
+        <li>Servidor DNS - IP: 10.0.10.10</li>
+        <li>Sitio Git personalizado - IP: 10.0.10.11</li>
+        <li>Servidor Nextcloud - IP: 10.0.10.13</li>
+      </ul>
+    </section>
+
+    <section id="vms">
+      <h2>Despliegue de Máquinas Virtuales</h2>
+      <p>Máquinas virtuales implementadas:</p>
+      <ul>
+        <li>Gateway (GW) - LAN: 192.168.56.10, DMZ: 10.0.10.1, WAN: asignada</li>
+        <li>Servidor Zentyal (ZAD00) - IP DMZ: 10.0.10.12</li>
+      </ul>
+    </section>
+
+    <section id="integracion">
+      <h2>Integración de Servicios</h2>
+      <p>Integración entre Zentyal y Nextcloud completada. Se permite acceso con usuarios <code>nombre.apellido</code> y <code>alumno.upds</code>.</p>
+    </section>
+
+    <section id="documentacion">
+      <h2>Documentación Técnica</h2>
+      <p>Incluye diseño gráfico de la arquitectura, configuración, manuales, respaldos y evidencias.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Universidad Privada Domingo Savio - Proyecto Final</p>
+    <button onclick="mostrarHora()">Mostrar hora actual</button>
+    <p id="hora"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
